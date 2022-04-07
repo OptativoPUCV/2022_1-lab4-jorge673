@@ -156,3 +156,26 @@ Thu Apr  7 15:40:38 UTC 2022:
  tests:  2|5
 total_score: 20/70
 ae10e62
+Thu Apr  7 15:49:01 UTC 2022: 
+ hashmap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:3: error: unknown type name ‘pair’; did you mean ‘Pair’?
+   pair* buckets=createPair(key,value)
+   ^~~~
+   Pair
+hashmap.c:43:17: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   pair* buckets=createPair(key,value)
+                 ^~~~~~~~~~
+hashmap.c:45:3: error: expected ‘,’ or ‘;’ before ‘int’
+   int pos=hash(key,map->capacity);
+   ^~~
+hashmap.c:47:16: error: ‘pos’ undeclared (first use in this function); did you mean ‘pow’?
+   map->buckets[pos]=buckets;
+                ^~~
+                pow
+hashmap.c:47:16: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+508b273
