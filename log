@@ -1,0 +1,29 @@
+Thu Apr  7 15:24:49 UTC 2022: 
+ hashmap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:3: error: unknown type name ‘pair’; did you mean ‘Pair’?
+   pair ** buckets=(pair**)malloc(sizeof(pair));
+   ^~~~
+   Pair
+hashmap.c:43:20: error: ‘pair’ undeclared (first use in this function); did you mean ‘Pair’?
+   pair ** buckets=(pair**)malloc(sizeof(pair));
+                    ^~~~
+                    Pair
+hashmap.c:43:20: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:43:26: error: expected expression before ‘)’ token
+   pair ** buckets=(pair**)malloc(sizeof(pair));
+                          ^
+hashmap.c:44:10: error: request for member ‘key’ in something not a structure or union
+   buckets->key=key;
+          ^~
+hashmap.c:45:10: error: request for member ‘value’ in something not a structure or union
+   buckets->value=value;
+          ^~
+hashmap.c:49:15: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+   map->buckets=buckets;
+               ^
+cc1: all warnings being treated as errors
+Compilation failed
+32a36c5
