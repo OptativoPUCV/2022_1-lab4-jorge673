@@ -44,7 +44,7 @@ void insertMap(HashMap * map, char * key, void * value) {
   buckets->key=key;
   buckets->value=value;
 
-  pos=hash(key,map->capacity);
+  int pos=hash(key,map->capacity);
   
   map->buckets[pos]=buckets;
   map->size++;

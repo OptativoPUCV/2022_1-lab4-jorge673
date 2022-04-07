@@ -144,3 +144,9 @@ hashmap.c:47:3: error: ‘pos’ undeclared (first use in this function); did yo
 hashmap.c:47:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 27cca5c
+Thu Apr  7 15:31:39 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+ddc2e73
