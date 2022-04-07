@@ -194,3 +194,18 @@ hashmap.c:47:16: error: ‘pos’ undeclared (first use in this function); did y
 hashmap.c:47:16: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 252bbc0
+Thu Apr  7 15:49:21 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:45:3: error: expected ‘,’ or ‘;’ before ‘long’
+   long pos=hash(key,map->capacity);
+   ^~~~
+hashmap.c:47:16: error: ‘pos’ undeclared (first use in this function); did you mean ‘pow’?
+   map->buckets[pos]=buckets;
+                ^~~
+                pow
+hashmap.c:47:16: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+db429ae
