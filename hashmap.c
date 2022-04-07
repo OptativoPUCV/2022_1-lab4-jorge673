@@ -40,7 +40,7 @@ int is_equal(void* key1, void* key2){
 
 
 void insertMap(HashMap * map, char * key, void * value) {
-  pair* buckets=createPair(key,value)
+  Pair* buckets=createPair(key,value)
 
   int pos=hash(key,map->capacity);
   
