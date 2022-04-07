@@ -132,3 +132,15 @@ hashmap.c:45:11: error: expected expression before ‘->’ token
            ^~
 Compilation failed
 5d6679e
+Thu Apr  7 15:31:27 UTC 2022: 
+ hashmap.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:47:3: error: ‘pos’ undeclared (first use in this function); did you mean ‘pow’?
+   pos=hash(key,map->capacity);
+   ^~~
+   pow
+hashmap.c:47:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+27cca5c
