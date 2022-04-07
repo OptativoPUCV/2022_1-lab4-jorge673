@@ -106,3 +106,16 @@ hashmap.c:45:12: error: expected identifier before ‘*’ token
             ^
 Compilation failed
 0a75213
+Thu Apr  7 15:28:42 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:44:10: error: request for member ‘key’ in something not a structure or union
+   buckets.key=key;
+          ^
+hashmap.c:45:12: error: expected identifier before ‘(’ token
+   buckets->(*value)=value;
+            ^
+Compilation failed
+937638b
