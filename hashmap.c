@@ -40,7 +40,7 @@ int is_equal(void* key1, void* key2){
 
 
 void insertMap(HashMap * map, char * key, void * value) {
-  pair ** buckets=(pair**)malloc(sizeof(pair));
+  Pair ** buckets=(Pair**)malloc(sizeof(Pair));
   buckets->key=key;
   buckets->value=value;
 
