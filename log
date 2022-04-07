@@ -229,3 +229,16 @@ Thu Apr  7 15:49:56 UTC 2022:
  tests:  2|5
 total_score: 20/70
 33033ab
+Thu Apr  7 16:18:56 UTC 2022: 
+ hashmap.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:49:5: error: called object ‘position’ is not a function or function pointer
+     position((position+1)%map->capacity);
+     ^~~~~~~~
+hashmap.c:44:8: note: declared here
+   long position=hash(key,map->capacity);
+        ^~~~~~~~
+Compilation failed
+c974e80
