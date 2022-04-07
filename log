@@ -242,3 +242,9 @@ hashmap.c:44:8: note: declared here
         ^~~~~~~~
 Compilation failed
 c974e80
+Thu Apr  7 16:21:18 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|4
+total_score: 30/70
+7610d7f
