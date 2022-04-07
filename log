@@ -42,3 +42,17 @@ hashmap.c:45:10: error: ‘*buckets’ is a pointer; did you mean to use ‘->�
           ->
 Compilation failed
 8cbe21e
+Thu Apr  7 15:26:24 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:44:10: error: request for member ‘key’ in something not a structure or union
+   buckets.key=key;
+          ^
+hashmap.c:45:10: error: ‘*buckets’ is a pointer; did you mean to use ‘->’?
+   buckets->value=value;
+          ^~
+          ->
+Compilation failed
+c339899
