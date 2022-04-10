@@ -385,3 +385,17 @@ Sun Apr 10 16:47:22 UTC 2022:
  tests:  12|2
 total_score: 50/70
 9dc9258
+Sun Apr 10 16:54:37 UTC 2022: 
+ hashmap.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:125:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   while(flag=0){
+         ^~~~
+hashmap.c:131:5: error: expected ‘;’ before ‘if’
+     if(cap==0)break;
+     ^~
+cc1: all warnings being treated as errors
+Compilation failed
+fc01a7b

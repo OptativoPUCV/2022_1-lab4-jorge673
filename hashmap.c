@@ -117,8 +117,21 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
+
+  long pos=0;
+  int flag=0;
+  long cap=map->capacity;
   
-  return map->buckets[0];
+  while(flag=0){
+    if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
+      map->current=pos;
+      return map->buckets[pos];
+    }
+    if(map->buckets[pos]!=NULL)cap--
+    if(cap==0)break;
+  }
+  
+  return NULL;
 }
 
 Pair * nextMap(HashMap * map) {
