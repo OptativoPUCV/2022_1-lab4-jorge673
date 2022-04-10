@@ -140,7 +140,20 @@ Pair * firstMap(HashMap * map) {
 
 Pair * nextMap(HashMap * map) {
   
-  long pos=map->current;
-
-  return map->buckets[pos+1+1];
+  long pos=map->current+1;
+  int wlc=0;
+  long cap=map->capacity;
+  
+  while(wlc==0){
+    
+    if(map->buckets[pos]!=NULL){
+      map->current=pos;
+      wlc=1;
+      return map->buckets[pos];
+    }
+    
+    pos++;
+  }
+  
+  return NULL;
 }
