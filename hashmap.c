@@ -151,11 +151,12 @@ Pair * nextMap(HashMap * map) {
       wlc=1;
       return map->buckets[pos];
     }
+    if(map->buckets[pos]==NULL){
+      map->current=pos;
+      wlc=1;
+      return map->buckets[pos];
+    }
     
-    pos++;
-    cap--;
-    
-    if(cap==0)break;
   }
   
   return NULL;

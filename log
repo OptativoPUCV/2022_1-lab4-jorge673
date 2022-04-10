@@ -652,3 +652,14 @@ Sun Apr 10 17:18:09 UTC 2022:
  tests:  15|2
 total_score: 50/70
 ec90552
+Sun Apr 10 17:19:00 UTC 2022: 
+ hashmap.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:145:8: error: unused variable ‘cap’ [-Werror=unused-variable]
+   long cap=map->capacity;
+        ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+c4c42b5
