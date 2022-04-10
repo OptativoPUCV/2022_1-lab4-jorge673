@@ -137,7 +137,6 @@ Pair * searchMap(HashMap * map,  char * key) {
 Pair * firstMap(HashMap * map) {
 
   long pos=0;
-  int wlc=0;
   long cap=map->capacity;
   
   while(pos<cap){
