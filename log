@@ -437,3 +437,9 @@ hashmap.c:132:5: error: expected ‘;’ before ‘if’
      ^~
 Compilation failed
 c9e8c13
+Sun Apr 10 16:55:52 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|2
+total_score: 50/70
+6ccf468
