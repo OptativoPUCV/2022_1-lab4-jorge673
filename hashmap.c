@@ -140,18 +140,19 @@ Pair * firstMap(HashMap * map) {
 Pair * nextMap(HashMap * map) {
   long pos=map->current+1;
   long cap=map->capacity;
-  
+
+  printf("%ld %ld")
   if(pos>=cap)return NULL;
 
   while(cap>0){
     if(map->buckets[pos]!=NULL ){
       map->current=pos;
-      printf("\nsi pero no");
+      printf("si pero no\n");
       return map->buckets[pos];
     }
     pos++;
     cap--;
   }
-  printf("\nsi");
+  printf("si\n");
   return NULL;
 }

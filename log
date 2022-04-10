@@ -864,3 +864,20 @@ Sun Apr 10 17:41:05 UTC 2022:
  tests:  15|2
 total_score: 50/70
 9689af9
+Sun Apr 10 17:41:56 UTC 2022: 
+ hashmap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:144:13: error: format ‘%ld’ expects a matching ‘long int’ argument [-Werror=format=]
+   printf("%ld %ld")
+           ~~^
+hashmap.c:144:17: error: format ‘%ld’ expects a matching ‘long int’ argument [-Werror=format=]
+   printf("%ld %ld")
+               ~~^
+hashmap.c:145:3: error: expected ‘;’ before ‘if’
+   if(pos>=cap)return NULL;
+   ^~
+cc1: all warnings being treated as errors
+Compilation failed
+e2667f9
