@@ -290,3 +290,17 @@ Sun Apr 10 16:36:57 UTC 2022:
  tests:  8|3
 total_score: 40/70
 5b133c2
+Sun Apr 10 16:37:26 UTC 2022: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:88:6: error: ‘map’ is a pointer; did you mean to use ‘->’?
+   map.size--
+      ^
+      ->
+hashmap.c:90:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+Compilation failed
+c2e66a4
