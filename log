@@ -881,3 +881,9 @@ hashmap.c:145:3: error: expected ‘;’ before ‘if’
 cc1: all warnings being treated as errors
 Compilation failed
 e2667f9
+Sun Apr 10 17:42:23 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  15|2
+total_score: 50/70
+b9d1b3a

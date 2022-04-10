@@ -141,7 +141,7 @@ Pair * nextMap(HashMap * map) {
   long pos=map->current+1;
   long cap=map->capacity;
 
-  printf("%ld %ld")
+  printf("%ld %ld\n",cap,pos);
   if(pos>=cap)return NULL;
 
   while(cap>0){
