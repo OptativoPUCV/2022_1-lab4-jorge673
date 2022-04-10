@@ -506,3 +506,9 @@ hashmap.c:138:32: error: ‘cap’ undeclared (first use in this function); did 
 hashmap.c:138:32: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 a8f2a64
+Sun Apr 10 17:06:02 UTC 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  12|2
+total_score: 50/70
+03fe975

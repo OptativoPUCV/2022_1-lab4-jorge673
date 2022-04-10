@@ -120,6 +120,7 @@ Pair * firstMap(HashMap * map) {
 
   long pos=0;
   int wlc=0;
+  long cap=map->capacity;
   
   while(wlc==0){
     printf("posision[%ld]=",pos);
