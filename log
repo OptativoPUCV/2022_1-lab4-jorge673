@@ -427,3 +427,13 @@ hashmap.c:132:5: error: expected ‘;’ before ‘if’
 cc1: all warnings being treated as errors
 Compilation failed
 c4b80ea
+Sun Apr 10 16:55:41 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:132:5: error: expected ‘;’ before ‘if’
+     if(cap==0)break;
+     ^~
+Compilation failed
+c9e8c13

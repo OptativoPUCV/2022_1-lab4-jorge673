@@ -122,7 +122,7 @@ Pair * firstMap(HashMap * map) {
   int wlc=0;
   long cap=map->capacity;
   
-  while(wlc=0){
+  while(wlc==0){
     if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
       map->current=pos;
       wlc=1;
