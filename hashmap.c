@@ -159,7 +159,7 @@ Pair * nextMap(HashMap * map) {
   long cap=map->capacity;
 
 
-  while(pos<oldcap){
+  while(pos<cap){
     if(map->buckets[pos]!=NULL ){
       map->current=pos;
       return map->buckets[pos];
