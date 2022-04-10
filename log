@@ -954,3 +954,29 @@ hashmap.c:63:10: error: unused variable ‘oldBuckets’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 755d526
+Sun Apr 10 18:00:50 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:73:14: error: ‘oldcap’ undeclared (first use in this function); did you mean ‘oldCap’?
+   while(pos>=oldcap){
+              ^~~~~~
+              oldCap
+hashmap.c:73:14: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:75:8: error: ‘oldbuckets’ undeclared (first use in this function); did you mean ‘oldBuckets’?
+     if(oldbuckets[pos]!=NULL){
+        ^~~~~~~~~~
+        oldBuckets
+hashmap.c:77:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+hashmap.c:64:8: error: unused variable ‘oldCap’ [-Werror=unused-variable]
+   long oldCap=map->capacity;
+        ^~~~~~
+hashmap.c:63:10: error: unused variable ‘oldBuckets’ [-Werror=unused-variable]
+   Pair** oldBuckets=map->buckets;
+          ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b72153f
