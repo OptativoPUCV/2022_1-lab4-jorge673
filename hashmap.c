@@ -153,7 +153,7 @@ Pair * nextMap(HashMap * map) {
     }
     
     if(map->buckets[pos]==NULL){
-      size--
+      size--;
     }
 
     if(size==0)return NULL;
