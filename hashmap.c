@@ -123,13 +123,6 @@ Pair * firstMap(HashMap * map) {
   long cap=map->capacity;
   
   while(wlc==0){
-    printf("posision[%ld]=",pos);
-    if(map->buckets[pos]!=NULL) printf("no es nula=");
-    else printf("es nula\n");
-    
-    if(map->buckets[pos]->key!=NULL) printf("%s\n",map->buckets[pos]->key);
-    else printf("key nula\n");
-
     
     if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
       map->current=pos;
