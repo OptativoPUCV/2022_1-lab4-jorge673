@@ -146,7 +146,6 @@ Pair * nextMap(HashMap * map) {
   while(cap>0){
     if(map->buckets[pos]!=NULL ){
       map->current=pos;
-      wlc=1;
       return map->buckets[pos];
     }
     pos++;
