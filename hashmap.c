@@ -157,6 +157,7 @@ Pair * nextMap(HashMap * map) {
     }
 
     if(size==0)return NULL;
+    pos++;
   }
   
   return NULL;
