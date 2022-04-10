@@ -449,3 +449,18 @@ Sun Apr 10 16:57:28 UTC 2022:
  tests:  12|2
 total_score: 50/70
 58d5bfa
+Sun Apr 10 17:03:56 UTC 2022: 
+ hashmap.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:126:5: error: implicit declaration of function ‘print’; did you mean ‘lrint’? [-Werror=implicit-function-declaration]
+     print("posision[%ld]=%",pos);
+     ^~~~~
+     lrint
+hashmap.c:134:5: error: expected ‘;’ before ‘if’
+     if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
+     ^~
+cc1: all warnings being treated as errors
+Compilation failed
+05c3f46
