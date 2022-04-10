@@ -141,6 +141,7 @@ Pair * firstMap(HashMap * map) {
 Pair * nextMap(HashMap * map) {
   
   long pos=map->current+1;
+  long map->size;
   int wlc=0;
   
   while(wlc==0){
@@ -150,12 +151,12 @@ Pair * nextMap(HashMap * map) {
       wlc=1;
       return map->buckets[pos];
     }
-    if(map->buckets[pos]==NULL){
-      map->current=pos;
-      wlc=1;
-      return map->buckets[pos];
-    }
     
+    if(map->buckets[pos]==NULL){
+      size--
+    }
+
+    if(size==0)return NULL;
   }
   
   return NULL;

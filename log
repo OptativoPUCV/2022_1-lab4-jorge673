@@ -669,3 +669,22 @@ Sun Apr 10 17:19:11 UTC 2022:
  tests:  13|2
 total_score: 50/70
 8434071
+Sun Apr 10 17:21:09 UTC 2022: 
+ hashmap.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:144:11: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   long map->size;
+           ^~
+hashmap.c:144:11: error: expected expression before ‘->’ token
+hashmap.c:156:7: error: ‘size’ undeclared (first use in this function); did you mean ‘sinl’?
+       size--
+       ^~~~
+       sinl
+hashmap.c:156:7: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:157:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+Compilation failed
+f75bf37
