@@ -140,7 +140,7 @@ Pair * firstMap(HashMap * map) {
 
 Pair * nextMap(HashMap * map) {
   
-  long pos=map->current+1;
+  long pos=map->current;
 
   return map->buckets[pos];
 }
