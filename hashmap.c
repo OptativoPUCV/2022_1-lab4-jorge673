@@ -129,9 +129,9 @@ Pair * firstMap(HashMap * map) {
       wlc=1;
       return map->buckets[pos];
     }
-    
-    if(pos>=cap)break;
     pos++;
+    if(pos>=cap)break;
+    
   }
   
   return NULL;
