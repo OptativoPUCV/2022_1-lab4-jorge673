@@ -142,6 +142,7 @@ Pair * nextMap(HashMap * map) {
   
   long pos=map->current+1;
   int wlc=0;
+  long cap=map->capacity;
   
   while(wlc==0){
     
@@ -152,6 +153,9 @@ Pair * nextMap(HashMap * map) {
     }
     
     pos++;
+    cap--;
+    
+    if(cap==0)break;
   }
   
   return NULL;
