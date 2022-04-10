@@ -1034,3 +1034,14 @@ Sun Apr 10 18:05:03 UTC 2022:
  tests:  17|0
 total_score: 70/70
 906710e
+Sun Apr 10 18:05:33 UTC 2022: 
+ hashmap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:140:7: error: unused variable ‘wlc’ [-Werror=unused-variable]
+   int wlc=0;
+       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+0ea1d7e
