@@ -1012,3 +1012,19 @@ Sun Apr 10 18:04:10 UTC 2022:
  tests:  17|0
 total_score: 70/70
 0896778
+Sun Apr 10 18:04:52 UTC 2022: 
+ hashmap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:162:13: error: ‘oldcap’ undeclared (first use in this function); did you mean ‘cap’?
+   while(pos<oldcap){
+             ^~~~~~
+             cap
+hashmap.c:162:13: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:159:8: error: unused variable ‘cap’ [-Werror=unused-variable]
+   long cap=map->capacity;
+        ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+8f6a542
