@@ -980,3 +980,13 @@ hashmap.c:63:10: error: unused variable ‘oldBuckets’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 b72153f
+Sun Apr 10 18:01:17 UTC 2022: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:77:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+Compilation failed
+8450905
