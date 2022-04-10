@@ -120,40 +120,24 @@ Pair * firstMap(HashMap * map) {
 
   long pos=0;
   int wlc=0;
-  long size=map->size;
+  long cap=map->capacity;
   
   while(wlc==0){
-    
+
     if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
       map->current=pos;
       wlc=1;
       return map->buckets[pos];
     }
-    pos++;
-    if(map->buckets[pos]!=NULL)size--;
-    
-    if(size==0)break;
+    if(map->buckets[pos]!=NULL)cap--;
+    pos++
+    if(cap==0)break;
   }
   
   return NULL;
 }
 
 Pair * nextMap(HashMap * map) {
-  
-  long pos=map->current+1;
-  //long size=map->size;
-  long cap=map->capacity;
-  
-  while(cap==0){
-    
-    if(map->buckets[pos]!=NULL){
-      map->current=pos;
-      return map->buckets[pos];
-    }
 
-    pos++;
-    cap--;
-  }
-  
-  return NULL;
+    return NULL;
 }
