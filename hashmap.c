@@ -141,8 +141,6 @@ Pair * firstMap(HashMap * map) {
 Pair * nextMap(HashMap * map) {
   
   long pos=map->current+1;
-  long cap=map->capacity;
-  
-  
+
   return map->buckets[pos];
 }
