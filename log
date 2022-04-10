@@ -262,3 +262,9 @@ hashmap.c:95:28: error: return makes pointer from integer without a cast [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 2f3acaf
+Sun Apr 10 16:26:33 UTC 2022: 
+ hashmap.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+ tests:  8|3
+total_score: 40/70
+bfc5d94
