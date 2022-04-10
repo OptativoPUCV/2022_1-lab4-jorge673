@@ -123,12 +123,14 @@ Pair * firstMap(HashMap * map) {
   long cap=map->capacity;
   
   while(wlc==0){
-    if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
+    if(map->buckets[pos]->key!=NULL){
       map->current=pos;
       wlc=1;
       return map->buckets[pos];
     }
+    
     if(map->buckets[pos]!=NULL)cap--;
+    
     if(cap==0)break;
   }
   
