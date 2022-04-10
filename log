@@ -663,3 +663,9 @@ hashmap.c:145:8: error: unused variable ‘cap’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 c4c42b5
+Sun Apr 10 17:19:11 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  13|2
+total_score: 50/70
+8434071
