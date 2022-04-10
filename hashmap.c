@@ -77,14 +77,11 @@ HashMap * createMap(long capacity) {
 
 void eraseMap(HashMap * map,  char * key) {  
 
-  long position=hash(key,map->capacity);
-  
-  Pair* aux = map->buckets[position];
-
+  pair* aux=searchMap(map,key);
+  long pos=map->current;
   aux->key=NULL;
 
-  map->buckets[position]=aux;
-
+  map->buckets[pos]=aux;
   map->size--;
   
 }
