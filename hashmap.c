@@ -136,6 +136,7 @@ Pair * firstMap(HashMap * map) {
       wlc=1;
       return map->buckets[pos];
     }
+    pos++;
     if(map->buckets[pos]!=NULL)cap--;
     
     if(cap==0)break;
