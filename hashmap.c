@@ -141,7 +141,7 @@ Pair * firstMap(HashMap * map) {
 Pair * nextMap(HashMap * map) {
   
   long pos=map->current+1;
-  long map->size;
+  long size=map->size;
   int wlc=0;
   
   while(wlc==0){
