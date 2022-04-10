@@ -120,7 +120,7 @@ Pair * firstMap(HashMap * map) {
 
   long pos=0;
   int wlc=0;
-  long cap=map->capacity;
+  long size=map->size;
   
   while(wlc==0){
     
@@ -130,9 +130,9 @@ Pair * firstMap(HashMap * map) {
       return map->buckets[pos];
     }
     pos++;
-    if(map->buckets[pos]!=NULL)cap--;
+    if(map->buckets[pos]!=NULL)size--;
     
-    if(cap==0)break;
+    if(size==0)break;
   }
   
   return NULL;
