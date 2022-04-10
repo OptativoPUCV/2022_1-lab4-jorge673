@@ -569,3 +569,17 @@ hashmap.c:144:7: error: unused variable ‘wlc’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 eb3b3b2
+Sun Apr 10 17:11:59 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:147:27: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+   return map->buckets[pos]!=NULL;
+                           ^
+hashmap.c:144:8: error: unused variable ‘cap’ [-Werror=unused-variable]
+   long cap=map->capacity;
+        ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+c09955c

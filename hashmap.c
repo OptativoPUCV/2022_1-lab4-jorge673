@@ -141,7 +141,6 @@ Pair * firstMap(HashMap * map) {
 Pair * nextMap(HashMap * map) {
   
   long pos=map->current+1;
-  int wlc=0;
   long cap=map->capacity;
   
   
