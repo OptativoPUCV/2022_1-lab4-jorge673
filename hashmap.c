@@ -48,12 +48,14 @@ void insertMap(HashMap * map, char * key, void * value) {
 
     position=((position+1)%map->capacity);
   }
+  
   if(map->buckets[position]!=NULL){
     map->buckets[position]->key=key;
     map->buckets[position]->value=value;
   }else{
     map->buckets[position]=createPair(key,value);
   }
+  
   map->size++;
 }
 
@@ -74,6 +76,7 @@ void enlarge(HashMap * map) {
 
     if(oldBuckets[pos]!=NULL){
       insertMap(map,oldBuckets[pos]->key,oldBuckets[pos]->value);
+      map.size++;
     }
     
     pos++;
@@ -109,29 +112,27 @@ void eraseMap(HashMap * map,  char * key) {
 
 Pair * searchMap(HashMap * map,  char * key) {   
 
-    long position=hash(key,map->capacity);
+  long position=hash(key,map->capacity);
 
-    while(map->buckets[position]!=NULL && map->buckets[position]->key!=NULL){
+  while(map->buckets[position]!=NULL && map->buckets[position]->key!=NULL){
 
-        if(is_equal(key,map->buckets[position]->key)){
-          map->current=position;
-          return map->buckets[position];
-        }
-          
-
-        position=((position+1)%map->capacity);
-    }
-
-    if(map->buckets[position]!=NULL){
-        
+    if(is_equal(key,map->buckets[position]->key)){
       map->current=position;
       return map->buckets[position];
-        
-    }else{
-        return NULL;
     }
+    position=((position+1)%map->capacity);
+  }
 
+  if(map->buckets[position]!=NULL){
+      
+    map->current=position;
+    return map->buckets[position];
+      
+  }else{
     return NULL;
+  }
+
+  return NULL;
 }
 
 Pair * firstMap(HashMap * map) {
