@@ -494,3 +494,15 @@ Sun Apr 10 17:04:50 UTC 2022:
  tests:  12|2
 total_score: 50/70
 01ac9d1
+Sun Apr 10 17:05:55 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:138:32: error: ‘cap’ undeclared (first use in this function); did you mean ‘map’?
+     if(map->buckets[pos]!=NULL)cap--;
+                                ^~~
+                                map
+hashmap.c:138:32: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+a8f2a64
