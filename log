@@ -838,3 +838,9 @@ hashmap.c:149:7: error: implicit declaration of function ‘print’; did you me
 cc1: all warnings being treated as errors
 Compilation failed
 42007f5
+Sun Apr 10 17:37:47 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  15|2
+total_score: 50/70
+d7dcbf9

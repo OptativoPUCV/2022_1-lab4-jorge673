@@ -146,12 +146,12 @@ Pair * nextMap(HashMap * map) {
   while(cap>0){
     if(map->buckets[pos]!=NULL ){
       map->current=pos;
-      print("\nsi pero no");
+      printf("\nsi pero no");
       return map->buckets[pos];
     }
     pos++;
     cap--;
   }
-  print("\nsi");
+  printf("\nsi");
   return NULL;
 }
