@@ -75,9 +75,16 @@ HashMap * createMap(long capacity) {
     return map;
 }
 
-void eraseMap(HashMap * map,  char * key) {    
+void eraseMap(HashMap * map,  char * key) {  
 
+  long position=hash(key,map->capacity);
+  
+  Pair aux=map->buckets[position];
 
+  aux->key=NULL;
+
+  map->buckets[position]=aux;
+  
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   

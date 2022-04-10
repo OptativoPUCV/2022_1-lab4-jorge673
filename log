@@ -268,3 +268,19 @@ Sun Apr 10 16:26:33 UTC 2022:
  tests:  8|3
 total_score: 40/70
 bfc5d94
+Sun Apr 10 16:36:40 UTC 2022: 
+ hashmap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:82:12: error: invalid initializer
+   Pair aux=map->buckets[position];
+            ^~~
+hashmap.c:84:6: error: invalid type argument of ‘->’ (have ‘Pair {aka struct Pair}’)
+   aux->key=NULL;
+      ^~
+hashmap.c:86:25: error: incompatible types when assigning to type ‘Pair * {aka struct Pair *}’ from type ‘Pair {aka struct Pair}’
+   map->buckets[position]=aux;
+                         ^
+Compilation failed
+b4c6e25
