@@ -141,7 +141,7 @@ Pair * nextMap(HashMap * map) {
   long pos=map->current+1;
   long cap=map->capacity;
   
-  if(pos>cap)return NULL;
+  if(searchMap(map,pos)==NULL)return NULL;
 
   while(cap>0){
     if(map->buckets[pos]!=NULL ){

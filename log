@@ -844,3 +844,17 @@ Sun Apr 10 17:37:47 UTC 2022:
  tests:  15|2
 total_score: 50/70
 d7dcbf9
+Sun Apr 10 17:39:50 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:144:20: error: passing argument 2 of ‘searchMap’ makes pointer from integer without a cast [-Werror=int-conversion]
+   if(searchMap(map,pos)==NULL)return NULL;
+                    ^~~
+hashmap.c:92:8: note: expected ‘char *’ but argument is of type ‘long int’
+ Pair * searchMap(HashMap * map,  char * key) {
+        ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5737aaa
