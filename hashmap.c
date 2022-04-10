@@ -142,15 +142,19 @@ Pair * nextMap(HashMap * map) {
   
   long pos=map->current+1;
   long size=map->size;
+  long cap=map->capacity;
   int wlc=0;
   
-  while(wlc==0){
+  while(cap==0){
     
     if(map->buckets[pos]!=NULL){
       map->current=pos;
-      wlc=1;
       return map->buckets[pos];
     }
+
+    if(size==0)brea;
+    pos++;
+    cap--;
   }
   
   return NULL;
