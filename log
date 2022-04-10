@@ -754,3 +754,15 @@ hashmap.c:146:7: error: unused variable ‘wlc’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 66237f9
+Sun Apr 10 17:28:56 UTC 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:154:16: error: ‘brea’ undeclared (first use in this function); did you mean ‘drem’?
+     if(size==0)brea;
+                ^~~~
+                drem
+hashmap.c:154:16: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+5166917

@@ -143,7 +143,6 @@ Pair * nextMap(HashMap * map) {
   long pos=map->current+1;
   long size=map->size;
   long cap=map->capacity;
-  int wlc=0;
   
   while(cap==0){
     
