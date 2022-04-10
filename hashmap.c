@@ -128,7 +128,7 @@ Pair * firstMap(HashMap * map) {
     else printf("es nula\n");
     
     if(map->buckets[pos]->key!=NULL) printf("%s\n",map->buckets[pos]->key);
-    else printf("key nula\n")
+    else printf("key nula\n");
 
     
     if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
