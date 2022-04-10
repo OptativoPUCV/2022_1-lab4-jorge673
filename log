@@ -368,3 +368,14 @@ hashmap.c:124:15: error: return from incompatible pointer type [-Werror=incompat
 cc1: all warnings being treated as errors
 Compilation failed
 2d76c36
+Sun Apr 10 16:47:05 UTC 2022: 
+ hashmap.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:121:13: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+   return map->buckets;
+          ~~~^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8e97f72

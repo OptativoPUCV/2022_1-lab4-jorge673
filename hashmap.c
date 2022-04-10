@@ -118,10 +118,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 
 Pair * firstMap(HashMap * map) {
 
-  Pair* map->buckets;
-    
-
-    return map->buckets;
+  return map->buckets;
 }
 
 Pair * nextMap(HashMap * map) {
