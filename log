@@ -858,3 +858,9 @@ hashmap.c:92:8: note: expected ‘char *’ but argument is of type ‘long int�
 cc1: all warnings being treated as errors
 Compilation failed
 5737aaa
+Sun Apr 10 17:41:05 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  15|2
+total_score: 50/70
+9689af9
