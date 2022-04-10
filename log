@@ -248,3 +248,17 @@ Thu Apr  7 16:21:18 UTC 2022:
  tests:  5|4
 total_score: 30/70
 7610d7f
+Sun Apr 10 15:11:38 UTC 2022: 
+ hashmap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:89:73: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+         if(is_equal(key,map->buckets[position]->key))return map->current=position;
+                                                             ~~~~~~~~~~~~^~~~~~~~~
+hashmap.c:95:28: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+         return map->current=position;
+                ~~~~~~~~~~~~^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2f3acaf
