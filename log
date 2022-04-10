@@ -353,3 +353,18 @@ Sun Apr 10 16:43:12 UTC 2022:
  tests:  11|2
 total_score: 50/70
 7bf6927
+Sun Apr 10 16:45:58 UTC 2022: 
+ hashmap.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:121:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   Pair* map->buckets;
+            ^~
+hashmap.c:121:12: error: expected expression before ‘->’ token
+hashmap.c:124:15: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+     return map->buckets;
+            ~~~^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2d76c36
