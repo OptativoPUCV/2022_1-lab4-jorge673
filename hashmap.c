@@ -73,7 +73,7 @@ void enlarge(HashMap * map) {
   while(pos>=oldCap){
 
     if(oldBuckets[pos]!=NULL){
-      insertMap(map,oldBuckets[pos]->key,oldBuckets[pos]->value)
+      insertMap(map,oldBuckets[pos]->key,oldBuckets[pos]->value);
     }
     
     pos++;
