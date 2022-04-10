@@ -464,3 +464,17 @@ hashmap.c:134:5: error: expected ‘;’ before ‘if’
 cc1: all warnings being treated as errors
 Compilation failed
 05c3f46
+Sun Apr 10 17:04:16 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:126:27: error: spurious trailing ‘%’ in format [-Werror=format=]
+     printf("posision[%ld]=%",pos);
+                           ^
+hashmap.c:134:5: error: expected ‘;’ before ‘if’
+     if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
+     ^~
+cc1: all warnings being treated as errors
+Compilation failed
+a941cd8
