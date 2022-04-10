@@ -130,7 +130,7 @@ Pair * firstMap(HashMap * map) {
       return map->buckets[pos];
     }
     if(map->buckets[pos]!=NULL)cap--;
-    pos++
+    pos++;
     if(cap==0)break;
   }
   
