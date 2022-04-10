@@ -1062,3 +1062,9 @@ hashmap.c:79:10: error: ‘map’ is a pointer; did you mean to use ‘->’?
           ->
 Compilation failed
 158d937
+Sun Apr 10 23:02:47 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 70/70
+e02d5e4
