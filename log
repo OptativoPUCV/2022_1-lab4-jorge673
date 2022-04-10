@@ -727,3 +727,14 @@ Sun Apr 10 17:26:31 UTC 2022:
  tests:  15|2
 total_score: 50/70
 59c8f25
+Sun Apr 10 17:27:16 UTC 2022: 
+ hashmap.c | 7 -------
+ 1 file changed, 7 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:144:8: error: unused variable ‘size’ [-Werror=unused-variable]
+   long size=map->size;
+        ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+88995d6

@@ -151,13 +151,6 @@ Pair * nextMap(HashMap * map) {
       wlc=1;
       return map->buckets[pos];
     }
-    
-    if(map->buckets[pos]==NULL){
-      size--;
-    }
-
-    if(size==0)return NULL;
-    pos++;
   }
   
   return NULL;
