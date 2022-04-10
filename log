@@ -911,3 +911,26 @@ Sun Apr 10 17:45:14 UTC 2022:
  tests:  16|1
 total_score: 60/70
 2973626
+Sun Apr 10 18:00:22 UTC 2022: 
+ hashmap.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:68:21: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   Pair** newBuckets=(Pair*)malloc(map->capacity*sizeof(Pair));
+                     ^
+hashmap.c:73:3: error: expected ‘,’ or ‘;’ before ‘while’
+   while(pos>=oldcap){
+   ^~~~~
+hashmap.c:71:8: error: unused variable ‘pos’ [-Werror=unused-variable]
+   long pos=0
+        ^~~
+hashmap.c:64:8: error: unused variable ‘oldCap’ [-Werror=unused-variable]
+   long oldCap=map->capacity;
+        ^~~~~~
+hashmap.c:63:10: error: unused variable ‘oldBuckets’ [-Werror=unused-variable]
+   Pair** oldBuckets=map->buckets;
+          ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c6396c5
