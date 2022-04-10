@@ -142,5 +142,5 @@ Pair * nextMap(HashMap * map) {
   
   long pos=map->current+1;
 
-  return map->buckets[pos]->key;
+  return map->buckets[pos];
 }
