@@ -133,6 +133,7 @@ Pair * firstMap(HashMap * map) {
     
     if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
       map->current=pos;
+      wlc=1;
       return map->buckets[pos];
     }
     if(map->buckets[pos]!=NULL)cap--;
