@@ -141,7 +141,7 @@ Pair * firstMap(HashMap * map) {
 Pair * nextMap(HashMap * map) {
   
   long pos=map->current+1;
-  long size=map->size;
+  //long size=map->size;
   long cap=map->capacity;
   
   while(cap==0){
@@ -151,7 +151,6 @@ Pair * nextMap(HashMap * map) {
       return map->buckets[pos];
     }
 
-    if(size==0)brea;
     pos++;
     cap--;
   }
