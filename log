@@ -552,3 +552,20 @@ Sun Apr 10 17:10:10 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 e9f9b74
+Sun Apr 10 17:11:51 UTC 2022: 
+ hashmap.c | 14 +-------------
+ 1 file changed, 1 insertion(+), 13 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:148:27: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+   return map->buckets[pos]!=NULL;
+                           ^
+hashmap.c:145:8: error: unused variable ‘cap’ [-Werror=unused-variable]
+   long cap=map->capacity;
+        ^~~
+hashmap.c:144:7: error: unused variable ‘wlc’ [-Werror=unused-variable]
+   int wlc=0;
+       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+eb3b3b2
