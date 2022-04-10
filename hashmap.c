@@ -125,6 +125,7 @@ Pair * firstMap(HashMap * map) {
   while(flag=0){
     if(map->buckets[pos]!=NULL && map->buckets[pos]->key!=NULL){
       map->current=pos;
+      flag=1;
       return map->buckets[pos];
     }
     if(map->buckets[pos]!=NULL)cap--
