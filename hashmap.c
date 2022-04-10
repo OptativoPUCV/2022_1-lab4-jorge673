@@ -144,5 +144,5 @@ Pair * nextMap(HashMap * map) {
   long cap=map->capacity;
   
   
-  return map->buckets[pos]!=NULL;
+  return map->buckets[pos];
 }
