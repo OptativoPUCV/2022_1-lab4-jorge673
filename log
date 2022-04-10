@@ -342,3 +342,8 @@ hashmap.c:84:20: error: assignment from incompatible pointer type [-Werror=incom
 cc1: all warnings being treated as errors
 Compilation failed
 6014dcc
+Sun Apr 10 16:42:28 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+4b2adce
