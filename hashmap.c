@@ -145,12 +145,11 @@ Pair * nextMap(HashMap * map) {
   while(cap>0){
     if(map->buckets[pos]!=NULL ){
       map->current=pos;
-      printf("si pero no\n");
       return map->buckets[pos];
     }
-    pos++;
+    
     if(pos>=cap)break;
+    pos++;
   }
-  printf("si\n");
   return NULL;
 }
